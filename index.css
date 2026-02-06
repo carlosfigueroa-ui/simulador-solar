@@ -1,149 +1,23 @@
 /* index.css */
 :root {
-    --primary-color: #FBD433; /* Amarillo estilo Coppel */
-    --secondary-color: #005CB9; /* Azul estilo Coppel */
+    --primary-color: #FBD433; /* Amarillo Coppel */
+    --secondary-color: #005CB9; /* Azul Coppel */
     --text-color: #333;
     --bg-color: #f4f4f4;
 }
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-/* Navegación */
-.nav {
-    background-color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.nav .img {
-    height: 40px;
-}
-
-.nav div {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-}
-
-.nav-btn button {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-    font-weight: bold;
-}
-
-.nav-btn button:hover {
-    background-color: #004a94;
-}
-
-/* Contenedor Principal */
-.contenedor-forms {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.form-primero, .form-segundo, .form-tercero {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    width: 100%;
-    max-width: 450px;
-}
-
-/* Elementos del Formulario */
-label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    font-family: 'Lora', serif;
-}
-
-input, select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Para que el padding no rompa el ancho */
-}
-
-input:focus, select:focus {
-    border-color: var(--secondary-color);
-    outline: none;
-}
-
-/* Sección de Consumo Mensual (Grid para los meses) */
-.section-f2 div {
-    display: inline-block;
-    width: 30%; /* Para poner 3 meses por fila */
-    margin-right: 2%;
-    margin-bottom: 10px;
-}
-
-.mes {
-    width: 100%;
-}
-
-/* Resultados y Textos Informativos */
-.texto-info {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-    color: var(--secondary-color);
-}
-
-/* Gráfica */
-.section-chart {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: center;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Corrida Financiera */
-.section-f3 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    font-size: 0.9rem;
-    margin-top: 10px;
-}
-
-.col1 {
-    background: #f9f9f9;
-    padding: 5px;
-    text-align: center;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--secondary-color);
-    color: white;
-    margin-top: 40px;
-}
+body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: var(--bg-color); color: var(--text-color); }
+.nav { background-color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.nav .img { height: 40px; }
+.nav div { font-weight: bold; font-size: 1.2rem; color: var(--secondary-color); }
+.nav-btn button { background-color: var(--secondary-color); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-left: 10px; font-weight: bold; }
+.nav-btn button:hover { background-color: #004a94; }
+.contenedor-forms { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+.form-primero, .form-segundo, .form-tercero { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); width: 100%; max-width: 450px; }
+label { display: block; margin-top: 10px; margin-bottom: 5px; font-weight: 500; font-family: 'Lora', serif; }
+input, select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+input:focus, select:focus { border-color: var(--secondary-color); outline: none; }
+.section-f2 div { display: inline-block; width: 30%; margin-right: 2%; margin-bottom: 10px; }
+.texto-info { display: block; margin-top: 15px; font-weight: bold; color: var(--secondary-color); }
+.section-chart { background: white; margin: 20px auto; padding: 20px; max-width: 800px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: flex; justify-content: center; }
+.hidden { display: none; }
+.footer { text-align: center; padding: 20px; background-color: var(--secondary-color); color: white; margin-top: 40px; }
