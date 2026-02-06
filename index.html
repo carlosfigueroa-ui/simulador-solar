@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DV1KLP9K9B"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-DV1KLP9K9B');
     </script>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sustentabilidad Coppel</title>
-    <link rel="icon" href="/Ícono-Sustentabilidad-5.ico">
+    <link rel="icon" href="Ícono-Sustentabilidad-5.ico">
 </head>
 <body id="pagina">
     <nav class="nav">
-    <img class="img" src="/logo.svg" alt="">
+    <img class="img" src="logo.svg" alt="Logo">
     <div>
         Simulador de paneles solares
     </div>
@@ -36,11 +34,8 @@
     <section class="contenedor-forms">
         <form id="form-1" method="get" class="form-primero">
             <div class="section">
-                    <!--<label> Nombre </label><br>
-                    <input type="text" autofocus id="nombre" placeholder="Tu nombre..." onkeydown="return /[a-z A-Z]/i.test(event.key)"><br>
-                    -->
                     <label title="Son paneles de 550 Watts">Número de paneles</label>
-                    <select  id="kwp" onchange="" width="300px">
+                    <select id="kwp" width="300px">
                         <option value="1100">2</option>
                         <option value="1650">3</option>
                         <option value="2200">4</option>
@@ -60,9 +55,7 @@
                         <option value="9900">18</option>
                         <option value="10450">19</option>
                     </select><br>
-                <!--<input type="number" step="550" id="kwp" placeholder="El tamaño del sistema..." value="" title="Aumenta de un panel para cada simulación y puedas revisar cual te conviene"><br>-->
-                <!--<label> Precio actual del dolar </label><br>
-                <input type="number" step="any" id="dolar" placeholder="" value="0"><br>-->
+                
                 <label> Saldo en Cuenta Corriente </label><br>
                 <input type="number" id="CC" placeholder="0" value="0" title="La deuda que tienes actualmente"><br>
                 <label>Saldo en Autocop </label><br>
@@ -83,15 +76,13 @@
                 <input type="number" id="prestamos" placeholder="0" value="0" title="Un prestamo especial se solicita a beneficios y compensaciones"><br>
                 <label>Respuesta:</label>
                 <label type="text" id="resultado"></label><br>
-                <!-- <button id="limpiar">Reiniciar</button>-->
-                <!--<button type="button" id="Calculadora">Calcular</button><br> --> <!--forzamos el ultimo boton del formulario de submit a button para que se mantengan visibles los resultados-->
             </div>
         </form>
         <form id="vida" method="get" class="form-segundo" >
-        <div  class="section-f2" >
+        <div class="section-f2" >
             <label>Consumo en kWh de un año</label><br>
             <label for="">Tarifa</label>
-            <select name="" id="tarifa" onchange="">
+            <select name="" id="tarifa">
                 <option value="1">1F</option>
                 <option value="2">1E</option>
                 <option value="3">1D</option>
@@ -100,55 +91,19 @@
                 <option value="6">1A</option>
                 <option value="7">1</option>
             </select><br>
-            <div>
-                <label>Ene</label>
-                <input class="mes" type="number" id="ene" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Feb</label>
-                <input class="mes" type="number" id="feb" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Mar</label>
-                <input class="mes" type="number" id="mar" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Abr</label>
-                <input class="mes" type="number" id="abr" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>May</label>
-                <input class="mes" type="number" id="may" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Jun</label>
-                <input class="mes" type="number" id="jun" placeholder="0" value=""><br>
-            </div>
-            <div >
-                <label>Jul</label>
-                <input class="mes" type="number" id="jul" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Ago</label>
-                <input class="mes" type="number" id="ago" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Sep</label>
-                <input class="mes" type="number" id="sep" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Oct</label>
-                <input class="mes" type="number" id="oct" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Nov</label>
-                <input class="mes" type="number" id="nov" placeholder="0" value=""><br>
-            </div>
-            <div>
-                <label>Dic</label>
-                <input class="mes" type="number" id="dic" placeholder="0" value=""><br>
-            </div>
-            <!--<button type="button" id="energia">Calcular</button><br>-->
+            <div><label>Ene</label><input class="mes" type="number" id="ene" placeholder="0" value=""></div>
+            <div><label>Feb</label><input class="mes" type="number" id="feb" placeholder="0" value=""></div>
+            <div><label>Mar</label><input class="mes" type="number" id="mar" placeholder="0" value=""></div>
+            <div><label>Abr</label><input class="mes" type="number" id="abr" placeholder="0" value=""></div>
+            <div><label>May</label><input class="mes" type="number" id="may" placeholder="0" value=""></div>
+            <div><label>Jun</label><input class="mes" type="number" id="jun" placeholder="0" value=""></div>
+            <div><label>Jul</label><input class="mes" type="number" id="jul" placeholder="0" value=""></div>
+            <div><label>Ago</label><input class="mes" type="number" id="ago" placeholder="0" value=""></div>
+            <div><label>Sep</label><input class="mes" type="number" id="sep" placeholder="0" value=""></div>
+            <div><label>Oct</label><input class="mes" type="number" id="oct" placeholder="0" value=""></div>
+            <div><label>Nov</label><input class="mes" type="number" id="nov" placeholder="0" value=""></div>
+            <div><label>Dic</label><input class="mes" type="number" id="dic" placeholder="0" value=""></div>
+            
             <label class="texto-info" id="sugerencia"></label><br>
             <label class="texto-info" id="sinProyecto" ></label><br>
             <label class="texto-info" id="conProyecto" ></label>
@@ -156,11 +111,10 @@
     </form>
     </section>
     <section class="section-chart">
-        <canvas id="myChart" class="myChart hidden" height=50vh width="300px" ></canvas>
+        <canvas id="myChart" class="myChart hidden" height="300" width="300"></canvas>
     </section>
     <form id="form-3" method="get" class="form-tercero">
         <label id="corrida-f">Corrida financiera</label><br>
-        <!--<button type="button" id="flujo">Calcular</button><br>-->
         <div class="section-f3 hidden">
             <p class="col1" id="col1"></p>
             <p class="col1" id="col2"></p>
@@ -174,7 +128,6 @@
         Derechos reservados Grupo Coppel ®
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.3/dist/chart.umd.min.js"></script>
-    <script type="text/javascript" src="/index.js"></script>
-
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
